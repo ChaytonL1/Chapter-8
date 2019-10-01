@@ -1,4 +1,4 @@
-package Examples;
+package YouDoIt;
 
 public class DemoArray {
 
@@ -16,6 +16,17 @@ public class DemoArray {
         System.out.println(salaries[1]);
         System.out.println(salaries[2]);
         System.out.println(salaries[3]);
+
+        double[] salaries2 = {6.25, 6.55, 10.25, 16.85};
+        for(int i = 0; i < 4; i++)
+        {
+            System.out.println(salaries2[i]);
+        }
+
+        for(int i = 0; i < salaries2.length; i++)
+        {
+            System.out.println(salaries2[i]);
+        }
 
     }
 }
