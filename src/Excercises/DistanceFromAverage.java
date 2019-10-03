@@ -14,7 +14,7 @@ public class DistanceFromAverage {
         double average;
         double distance;
         double total = 0;
-        System.out.println(" How many number will you be entering? ");
+        System.out.println(" How many numbers will you be entering? ");
 
         userEntry = input.nextInt();
         double[] values = new double[userEntry];
@@ -22,14 +22,13 @@ public class DistanceFromAverage {
         for (int i =0; i < values.length; i++)
         {
             System.out.println(" Enter a value. >>>");
-            score = input.nextDouble();
-            values[i] = score;
+            values[i] = input.nextDouble();
             total = values[i] + total;
         }
         average = total/values.length;
         for (int j = 0; j < values.length; j++)
         {
-            distance = values[j] - average;
+            distance = average - values[j];
             System.out.println(values[j] + " is " + distance + " away from the average which is == " + average);
         }
 
