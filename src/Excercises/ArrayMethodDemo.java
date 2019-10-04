@@ -7,12 +7,17 @@ private static int total = 0;
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int limit = 12;
-        int [] array = new int[10];
+        int limit;
+        int userEntry;
         int total = 0;
         int average = 0;
+        System.out.println(" How many numbers will you be entering. >>");
+        userEntry = input.nextInt();
+        int [] array = new int[userEntry];
+        System.out.println(" What would you like the limit to be. >> ");
+        limit = input.nextInt();
 
-        for(int i = 0; i < 10; i++)
+        for(int i = 0; i < array.length; i++)
         {
             System.out.println(" Enter a number >>> ");
             array[i] = input.nextInt();
@@ -26,10 +31,12 @@ private static int total = 0;
         displaySum(array,total);
         System.out.println("   ");
         displayAboveAverage(array,total,average);
+        System.out.println("   ");
+        lessThanLimit(array, limit);
     }
     public static void displayIntegers(int array[])
     {
-        for(int i = 0; i < 10; i++)
+        for(int i = 0; i < array.length; i++)
         {
             System.out.println(array[i]);
         }
@@ -37,7 +44,7 @@ private static int total = 0;
     }
     public static void displayReverse(int array[])
     {
-        for(int i = 9; i > 0; i--)
+        for(int i = array.length -1; i >= 0; i--)
         {
             System.out.println(array[i]);
         }
@@ -53,7 +60,7 @@ private static int total = 0;
 
        average = total / array.length;
        System.out.println(" The average is >> " + average);
-       for (int i = 0; i < 10; i++)
+       for (int i = 0; i < array.length; i++)
        {
            if ( array[i] > average)
            {
@@ -69,15 +76,22 @@ private static int total = 0;
                }
        }
     }
-//    public static void lessThanLimit(int array, int limit)
-//    {
-//        System.out.println(" All the number entered under the limit. ");
-//        for (int i = 0; i < 10; i ++)
-//        {
-//            if(array [i] < limit)
-//            {
-//
-//            }
-//        }
-//    }
+    public static void lessThanLimit(int array[], int limit)
+    {
+        int count = 0;
+        System.out.println(" All the numbers entered under the limit. ");
+        for (int i = 0; i < array.length; i ++)
+        {
+            if(array [i] < limit)
+            {
+                System.out.println( array[i] + " Is less than the limit.");
+            }
+            else if(array [i] > limit)
+            {
+             count++;
+                System.out.println(" ");
+            }
+        }
+        System.out.println(" There were " + count + " number(s) above the limit. ");
+    }
 }
