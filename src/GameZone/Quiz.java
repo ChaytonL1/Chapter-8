@@ -6,6 +6,7 @@ public class Quiz {
 
     public static void main(String[] args) {
         int answer;
+        int count = 0;
         Scanner input = new Scanner(System.in);
         String[] quizArray = new String[10];
         int [] answerArray = new int[10];
@@ -18,6 +19,7 @@ public class Quiz {
         if ( answer == answerArray[0])
         {
          System.out.println("Correct");
+         count++;
         }
         else
             {
@@ -28,6 +30,7 @@ public class Quiz {
         if ( answer == answerArray[1])
         {
             System.out.println("Correct");
+            count++;
         }
         else
         {
@@ -38,6 +41,7 @@ public class Quiz {
         if ( answer == answerArray[2])
         {
             System.out.println("Correct");
+            count++;
         }
         else
         {
@@ -48,6 +52,7 @@ public class Quiz {
         if ( answer == answerArray[3])
         {
             System.out.println("Correct");
+            count++;
         }
         else
         {
@@ -58,6 +63,7 @@ public class Quiz {
         if ( answer == answerArray[4])
         {
             System.out.println("Correct");
+            count++;
         }
         else
         {
@@ -68,6 +74,7 @@ public class Quiz {
         if ( answer == answerArray[5])
         {
             System.out.println("Correct");
+            count++;
         }
         else
         {
@@ -78,6 +85,7 @@ public class Quiz {
         if ( answer == answerArray[6])
         {
             System.out.println("Correct");
+            count++;
         }
         else
         {
@@ -88,6 +96,7 @@ public class Quiz {
         if ( answer == answerArray[7])
         {
             System.out.println("Correct");
+            count++;
         }
         else
         {
@@ -98,6 +107,7 @@ public class Quiz {
         if ( answer == answerArray[8])
         {
             System.out.println("Correct");
+            count++;
         }
         else
         {
@@ -108,6 +118,7 @@ public class Quiz {
         if ( answer == answerArray[9])
         {
             System.out.println("Correct");
+            count++;
         }
         else
         {
