@@ -92,6 +92,6 @@ private static int total = 0;
                 System.out.println(" ");
             }
         }
-        System.out.println(" There were " + count + " number(s) above the limit. ");
+        System.out.println(" There were " + count + " number(s) above the limit. (" + limit + ")");
     }
 }

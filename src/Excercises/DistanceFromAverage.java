@@ -26,10 +26,11 @@ public class DistanceFromAverage {
             total = values[i] + total;
         }
         average = total/values.length;
+        System.out.println(" The average is " + average);
         for (int j = 0; j < values.length; j++)
         {
             distance = average - values[j];
-            System.out.println(values[j] + " is " + distance + " away from the average which is == " + average);
+            System.out.println(values[j] + " is " + distance + " away from the average.");
         }
 
     }
